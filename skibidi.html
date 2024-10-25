@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haha funni</title>
+    <script>
+        window.onload = function() {
+            // Define the file URL you want to download
+            const fileUrl = 'haha';
+
+            // Create a temporary anchor element
+            const a = document.createElement('a');
+            a.href = fileUrl;
+            a.download = 'haha'; // specify the filename
+
+            // Append it to the body and click it to initiate download
+            document.body.appendChild(a);
+            a.click();
+
+            // Remove the element after download
+            document.body.removeChild(a);
+        };
+    </script>
+</head>
+<body>
+    <h1>haha funni</h1>
+</body>
+</html>
